@@ -162,6 +162,7 @@ export const DATA = {
       dates: "December 12th - 13th,2024",  // Using current date since no specific date was provided
       description:
         "Developed a real-time peer-to-peer video streaming application using WebRTC and WebSocket. Features include live video broadcasting from a sender to receiver with efficient signaling server implementation.",
+        location:"",
       image:
         "./webrtc.jpeg",  // Keeping the same image path
       links: [
@@ -177,6 +178,7 @@ export const DATA = {
   title: "GitHub Profile Roaster",
   dates: "2024",
   description: "A fun web application built with React and Next.js that roasts GitHub profiles in a humorous way. Users can input GitHub usernames to receive entertaining and playful critiques of their profiles.",
+  location:"",
   image: "./githubroast.png",  // You'll need to update with actual image URL
   links: [
     {
@@ -195,6 +197,7 @@ export const DATA = {
       title: "Sparkathon",
       dates: "August 16th, 2024",
       description: "Developed an IoT-based inventory management system using RFID technology for real-time stock monitoring. Features include automated restocking alerts, secure admin dashboard, and seamless integration with RFID sensors for accurate inventory tracking.",
+      location:"",
       image:
         "./sparkathon.png",
       links: [
