@@ -111,7 +111,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://i.imgur.com/woHiuuX.mp4",
+      video: "https://i.imgur.com/qBMdmoJ.mp4",
     },
     {
       title: "Smart Shelf",
