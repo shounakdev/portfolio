@@ -10,12 +10,13 @@ export const DATA = {
     "Engineering elegant solutions to complex problems",
   summary:
     "I'm a Software Engineer with a strong foundation in Computer Science and a passion for building scalable tech solutions. My expertise spans full-stack development, system design, and cloud infrastructure. Through hands-on projects and hackathons, I've developed proficiency in building robust applications.",
-  avatarUrl: "/me.jpg",
+  avatarUrl: "/me.png",
   skills: [
     "C++",
     "JavaScript",
     "TypeScript",
     "React",
+    "ReactNative",
     "Next.js",
     "Node.js",
     "Express",
@@ -27,7 +28,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "akshatsing11@gmail.com",
@@ -69,6 +69,20 @@ export const DATA = {
       logoUrl: "/srmlogo.png",
       start: "2021",
       end: "2025",
+    }
+  ],
+  work: [
+    {
+      company: "Stick & Dot Media",
+      title: "Founding Software Development Engineer",
+      location: "India",
+      type: "Full-time",
+      start: "January 2025",
+      end: "Present",
+      href: "https://stickanddot.com",
+      logoUrl: "/stickdot.jpg",
+      description: "Working as a founding member of the engineering team, responsible for architecting and developing core platform features. Leading technical decisions and implementing scalable solutions for the company's digital media platform. Collaborating with cross-functional teams to define and execute product roadmap.",
+      badges: []
     }
   ],
   projects: [
@@ -158,8 +172,61 @@ export const DATA = {
   ],
   Milestones: [
     {
+      title: "Casino Games",
+      dates: "February 14th, 2025",
+      description:
+        "A browser-based casino application featuring Slots and Roulette games, built with TypeScript.",
+      location:"",
+      image:
+        "./casinogame.jpg",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/casino-games",
+        }
+      ],
+    },
+    {
+      title: "Code Complexity Analyzer",
+      dates: "February 8th, 2025",
+      description:
+        "A powerful tool that leverages Generative AI to analyze and visualize the complexity of your algorithms. This tool provides detailed insights into time complexity, space complexity, and potential optimizations for your code.",
+      location:"",
+      image:
+        "./bigOcalc.jpg",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://big-o-calc.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/BigOCalc",
+        }
+      ],
+    },
+    {
+      title: "API Rate Limiter",
+      dates: "January 6th - 11th, 2025",
+      description:
+        "Test rate limiting on any API endpoint",
+      location:"",
+      image:
+        "./apiratelimiter.jpg",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/rate-limiter",
+        }
+      ],
+    },
+    {
       title: "WebRTC Video Streaming Application",
-      dates: "December 12th - 13th,2024",  // Using current date since no specific date was provided
+      dates: "December 12th - 13th, 2024",  // Using current date since no specific date was provided
       description:
         "Developed a real-time peer-to-peer video streaming application using WebRTC and WebSocket. Features include live video broadcasting from a sender to receiver with efficient signaling server implementation.",
         location:"",
