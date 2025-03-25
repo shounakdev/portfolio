@@ -3,6 +3,12 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import fs from "fs";
 
+interface BlogParams {
+  params: {
+    slug: string;
+  };
+}
+
 export async function generateStaticParams() {
   const dir = "content";
   if (!fs.existsSync(dir)) return [];
@@ -13,14 +19,14 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }): Promise<Metadata> {
+export async function generateMetadata({ params }: BlogParams): Promise<Metadata> {
   if (!params?.slug) return {};
   
   const post = await getPost(params.slug);
   return post ? { title: post.metadata.title, description: post.metadata.summary } : {};
 }
 
-export default async function BlogPostPage({ params }) {
+export default async function BlogPostPage({ params }: BlogParams) {
   const post = await getPost(params.slug);
 
   if (!post) {
