@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: '/me.jpg',
+    shortcut: '/me.jpg',
+    apple: '/me.jpg',
+  },
   twitter: {
     title: `${DATA.name}`,
     card: "summary_large_image",

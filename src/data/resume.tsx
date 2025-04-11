@@ -87,6 +87,34 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Devconnect",
+      href: "https://github.com/abhi-yo/hyperlocal",
+      dates: "April, 2025",
+      active: true,
+      description:
+        "A modern social platform for developers to connect, share ideas, and collaborate on projects. Features include GitHub OAuth integration, trending repositories section, and Dev.to/Reddit content integration.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TailwindCSS",
+        "tRPC",
+        "Prisma",
+        "PostgreSQL",
+        "Redis",
+        "NextAuth.js",
+        "TypeScript"
+      ],
+      links: [
+          {
+            type: "Website",
+            href: "https://devconnect-social.vercel.app",
+            icon: <Icons.globe className="size-3" />,
+          },
+      ],
+      image: "",
+      video: "/videos/devconnect.mp4",
+    },
+    {
       title: "Event Sphere",
       href: "https://github.com/abhi-yo/hyperlocal",
       dates: "October, 2024",
@@ -111,7 +139,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://i.imgur.com/qBMdmoJ.mp4",
+      video: "/videos/eventsphere.mp4",
     },
     {
       title: "Smart Shelf",
@@ -137,7 +165,7 @@ export const DATA = {
         }
       ],
       image: "",
-      video: "https://i.imgur.com/kgqiVam.mp4",
+      video: "/videos/smartshelf.mp4 ",
     },
     {
       title: "Ecommerce",
