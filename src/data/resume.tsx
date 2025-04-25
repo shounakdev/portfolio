@@ -10,7 +10,7 @@ export const DATA = {
     "Engineering elegant solutions to complex problems",
   summary:
     "I'm a Software Engineer with a strong foundation in Computer Science and a passion for building scalable tech solutions. My expertise spans full-stack development, system design, and cloud infrastructure. Through hands-on projects and hackathons, I've developed proficiency in building robust applications.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/icon.png",
   skills: [
     "C++",
     "JavaScript",

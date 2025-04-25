@@ -6,13 +6,38 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
+const title = `${DATA.name} - ${DATA.description}`;
+const description = DATA.summary;
+const url = "https://akshatsingh.xyz";
+
 export const metadata: Metadata = {
+  title,
+  description,
+  metadataBase: new URL(url),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    url,
+    images: [
+      {
+        url: "/me.jpg",
+        width: 1200,
+        height: 630,
+        alt: DATA.name,
+      },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
@@ -25,13 +50,19 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/me.jpg',
-    shortcut: '/me.jpg',
-    apple: '/me.jpg',
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.png", sizes: "192x192" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: { url: "/apple-icon.png", sizes: "180x180" },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title,
+    description,
     card: "summary_large_image",
+    creator: "@akshatsingh_s",
+    images: ["/me.jpg"],
   },
   verification: {
     google: "",
@@ -46,6 +77,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="dark">
+      <head>
+        <Script id="schema-person" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: DATA.name,
+            url: url,
+            image: "/me.jpg",
+            jobTitle: DATA.work[0]?.title || "Software Engineer",
+            worksFor: {
+              "@type": "Organization",
+              name: DATA.work[0]?.company || "",
+            },
+            description: DATA.summary,
+            skills: DATA.skills.join(", "),
+          })}
+        </Script>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",

@@ -8,13 +8,19 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import type { Metadata } from "next";
 
 const BLUR_FADE_DELAY = 0.04;
+
+export const metadata: Metadata = {
+  title: `${DATA.name} - Portfolio`,
+  description: DATA.summary,
+};
 
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero">
+      <section id="hero" aria-label="Introduction">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
@@ -24,6 +30,7 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
+              <h1 className="sr-only">{DATA.name} - {DATA.description}</h1>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
@@ -32,14 +39,14 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage alt={`${DATA.name}'s profile picture`} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
         </div>
       </section>
-      <section id="about">
+      <section id="about" aria-label="About">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
@@ -49,7 +56,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="education">
+      <section id="education" aria-label="Education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
@@ -72,7 +79,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="work">
+      <section id="work" aria-label="Work Experience">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
@@ -97,7 +104,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="skills">
+      <section id="skills" aria-label="Skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
@@ -111,7 +118,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects">
+      <section id="projects" aria-label="Projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -152,7 +159,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="hackathons" aria-label="Milestones">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -190,7 +197,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" aria-label="Contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
@@ -205,6 +212,7 @@ export default function Page() {
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
+                  rel="noopener noreferrer"
                 >
                   with a direct question on twitter
                 </Link>{" "}
