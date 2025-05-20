@@ -200,6 +200,180 @@ export const DATA = {
   ],
   Milestones: [
     {
+      title: "Skill Exchange",
+      dates: "May 14th, 2025",
+      description:
+        "A community-driven platform where users can offer and request services without using money. Simply create a profile, browse available services nearby, and send a request. Just help and get help when needed. Build your reputation through completed tasks and trusted connections.",
+      location:"",
+      image:
+        "./skillexchange.jpg",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://skillsexchange.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/skillexchange",
+        }
+      ],
+    },
+    {
+      title: "Website Modifier",
+      dates: "May 7th, 2025",
+      description:
+        "A powerful browser extension that allows you to modify any website using natural language instructions. Simply describe what you want to change, and the extension will generate and apply the necessary code.",
+      location:"",
+      image:
+        "https://cdn-icons-png.flaticon.com/512/1875/1875660.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/website-modifier",
+        }
+      ],
+    },
+    {
+      title: "Swap Contract",
+      dates: "May 6th, 2025",
+      description:
+        "Web application built with Express that provides a simple interface to perform a token swap on the Solana blockchain using the Jupiter Aggregator API.",
+      location:"",
+      image:
+        "./swapcontract.jpg",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/swapcontract",
+        }
+      ],
+    },
+    {
+      title: "Etherea",
+      dates: "April 25th, 2025",
+      description:
+        "A static landing page built with Next.js for a concept app that offers AI-generated ambient soundscapes. Focuses on clean design, atmospheric visuals, and a waitlist email form.",
+      location:"",
+      image:
+        "https://cdn-icons-png.flaticon.com/512/9650/9650488.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://etherea-three.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/etherea",
+        }
+      ],
+    },
+    {
+      title: "Solana Wallet Interface",
+      dates: "April 18th, 2025",
+      description:
+        "A minimal web interface for interacting with Solana blockchain, built with React and Solana Web3.js.",
+      location:"",
+      image:
+        "./solanawalletinterface.jpg",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://solana-wallet-interface.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/solana-wallet-interface",
+        }
+      ],
+    },
+    {
+      title: "CodeNexus",
+      dates: "April 18th, 2025",
+      description:
+        "A project built leveraging the groq ai api for enhancing code.",
+      location:"",
+      image:
+        "https://cdn-icons-png.flaticon.com/512/6295/6295417.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://codenexus-ruby.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/codenexus",
+        }
+      ],
+    },
+    {
+      title: "Subscription Tracker",
+      dates: "April 16th, 2025",
+      description:
+        "This app helps you track subscriptions and bank transactions by analyzing your email data. Since it uses a mail scanner, you'll need to clone the repo and run it locally.",
+      location:"",
+      image:
+        "https://cdn-icons-png.flaticon.com/512/7142/7142010.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://subscriptionsummary.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/subscription-tracker",
+        }
+      ],
+    },
+    {
+      title: "Web Wallet",
+      dates: "April 1st, 2025",
+      description:
+        "Allows you to generate and manage Ethereum wallets securely in your browser.",
+      location:"",
+      image:
+        "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://web-wallet-eth.vercel.app/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/web-wallet",
+        }
+      ],
+    },
+    {
+      title: "Message",
+      dates: "March 29th, 2025",
+      description:
+        "Real-time chat application built with Next.js 15, Socket.io, PostgreSQL, Prisma ORM, Tailwind CSS having a beautiful UI.",
+      location:"",
+      image:
+        "https://cdn-icons-png.flaticon.com/512/2076/2076218.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/Message",
+        }
+      ],
+    },
+    {
       title: "Casino Games",
       dates: "February 14th, 2025",
       description:
@@ -212,27 +386,6 @@ export const DATA = {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/abhi-yo/casino-games",
-        }
-      ],
-    },
-    {
-      title: "Code Complexity Analyzer",
-      dates: "February 8th, 2025",
-      description:
-        "A powerful tool that leverages Generative AI to analyze and visualize the complexity of your algorithms. This tool provides detailed insights into time complexity, space complexity, and potential optimizations for your code.",
-      location:"",
-      image:
-        "./bigOcalc.jpg",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://big-o-calc.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/BigOCalc",
         }
       ],
     },
