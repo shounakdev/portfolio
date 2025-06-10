@@ -12,6 +12,9 @@ import { Analytics } from "@vercel/analytics/next";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
 const title = `${DATA.name} - ${DATA.description}`;
@@ -30,9 +33,11 @@ export const metadata: Metadata = {
     description,
     type: "website",
     url,
+    siteName: DATA.name,
+    locale: 'en_US',
     images: [
       {
-        url: "/me.jpg",
+        url: `${url}/me.jpg`,
         width: 1200,
         height: 630,
         alt: DATA.name,
@@ -63,7 +68,7 @@ export const metadata: Metadata = {
     description,
     card: "summary_large_image",
     creator: "@akshatsingh_s",
-    images: ["/me.jpg"],
+    images: [`${url}/me.jpg`],
   },
   verification: {
     google: "",
@@ -77,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="dark">
+    <html lang="en" suppressHydrationWarning className={`dark ${fontSans.variable}`}>
       <head>
         <Script id="schema-person" type="application/ld+json">
           {JSON.stringify({

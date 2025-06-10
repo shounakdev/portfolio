@@ -73,15 +73,15 @@ export const DATA = {
   ],
   work: [
     {
-      company: "Stick & Dot Media",
-      title: "Founding Software Development Engineer",
-      location: "India",
-      type: "Full-time",
-      start: "January 2025",
+      company: "Freelance",
+      title: "Full-Stack Developer",
+      location: "Remote",
+      type: "Freelance",
+      start: "January 2024",
       end: "Present",
-      href: "https://stickanddot.com",
-      logoUrl: "/stickdot.jpg",
-      description: "Working as a founding member of the engineering team, responsible for architecting and developing core platform features. Leading technical decisions and implementing scalable solutions for the company's digital media platform. Collaborating with cross-functional teams to define and execute product roadmap.",
+      href: "",
+      logoUrl: "/freelance.png",
+      description: "Developing custom web applications and solutions for various clients. Building scalable full-stack applications using modern technologies like Next.js, React, Node.js, and cloud platforms. Collaborating directly with clients to understand requirements and deliver tailored solutions.",
       badges: []
     }
   ],
