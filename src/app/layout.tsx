@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: `${url}/me.jpg`,
+        url: `${url}/me.png`,
         width: 1200,
         height: 630,
         alt: DATA.name,
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     description,
     card: "summary_large_image",
     creator: "@akshatsingh_s",
-    images: [`${url}/me.jpg`],
+    images: [`${url}/me.png`],
   },
   verification: {
     google: "",
@@ -90,7 +90,7 @@ export default function RootLayout({
             "@type": "Person",
             name: DATA.name,
             url: url,
-            image: "/me.jpg",
+            image: "/me.png",
             jobTitle: DATA.work[0]?.title || "Software Engineer",
             worksFor: {
               "@type": "Organization",
