@@ -4,7 +4,6 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Akshat Singh",
   initials: "DV",
-  // url: "https://dillion.io",
   location: "India",
   description:
     "Engineering elegant solutions to complex problems",
@@ -200,23 +199,92 @@ export const DATA = {
   ],
   Milestones: [
     {
-      title: "Skill Exchange",
-      dates: "May 14th, 2025",
+      title: "Closed Companies",
+      dates: "July, 2025",
       description:
-        "A community-driven platform where users can offer and request services without using money. Simply create a profile, browse available services nearby, and send a request. Just help and get help when needed. Build your reputation through completed tasks and trusted connections.",
+        "A public archive documenting startup failures from 2016-2025.",
       location:"",
       image:
-        "./skillexchange.jpg",
+        "./closedcompanies.png",
       links: [
         {
           title: "Live Demo",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://skillsexchange.vercel.app/",
+          href: "https://closed-companies.vercel.app/",
+        }
+      ],
+    },
+    {
+      title: "Resume Generator",
+      dates: "July, 2025",
+      description:
+        "Professional resume generator that turns your GitHub into a polished LaTeX resume, top 6 on Peerlist with 130+ upvotes and 200+ visitors on website.",
+      location:"",
+      image:
+        "./githubresume.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://githubresume.vercel.app/resume",
+        }
+      ],
+    },
+    {
+      title: "Quilly",
+      dates: "July, 2025",
+      description:
+        "A distraction-free writing platform with blockchain-powered copyright protection, built with Next.js and deployed on Polygon.",
+      location:"",
+      image:
+        "./quily.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://contentplatform.vercel.app/",
         },
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/skillexchange",
+          href: "https://github.com/abhi-yo/quilly",
+        }
+      ],
+    },
+    {
+      title: "Pricepal",
+      dates: "June, 2025",
+      description:
+        "A web app that serves as a price comparison platform, to help users find the best deals across multiple e-commerce platforms in India.",
+      location:"",
+      image:
+        "./pricepal.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/pricepal",
+        }
+      ],
+    },
+    {
+      title: "SkillPact",
+      dates: "June, 2025",
+      description:
+        "Skillpact is a unique credit-based skill exchange platform designed to connect neighbors and foster community collaboration.",
+      location:"",
+      image:
+        "./skillpact.png",
+      links: [
+        {
+          title: "Live Demo",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.skillpact.co/",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/abhi-yo/skillpact",
         }
       ],
     },
