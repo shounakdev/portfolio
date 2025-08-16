@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/icon.png" },
+      { url: "/icon.jpg" },
     ],
     shortcut: "/favicon.ico",
     apple: { url: "/apple-icon.png", sizes: "180x180" },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title,
     description,
     card: "summary_large_image",
-    creator: "@akshatsingh_s",
+    creator: "@shounakdev",
     images: [`${url}/me.png`],
   },
   verification: {

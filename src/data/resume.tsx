@@ -2,65 +2,54 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Akshat Singh",
-  initials: "DV",
+  name: "Shounak Chandra",
+  initials: "SC",
   location: "India",
   description:
-    "Engineering elegant solutions to complex problems",
+    "A human who loves engineering",
   summary:
-    "I'm a Software Engineer with a strong foundation in Computer Science and a passion for building scalable tech solutions. My expertise spans full-stack development, system design, and cloud infrastructure. Through hands-on projects and hackathons, I've developed proficiency in building robust applications.",
-  avatarUrl: "/icon.png",
+    "I'm a Software Engineer with a passion for building scalable tech solutions. I love learning new things. My expertise spans full-stack development, system design, and cloud infrastructure.",
+  avatarUrl: "/icon.jpg",
   skills: [
-    "C++",
-    "JavaScript",
+    "Go",
+    "Rust",
+    "Java",
+    "Python",
     "TypeScript",
     "React",
-    "ReactNative",
     "Next.js",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Redis",
-    "Docker",
-    "AWS",
-    "Tailwind CSS"
+    "Cloud",
+    "Blockchain"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
   contact: {
-    email: "akshatsing11@gmail.com",
-    tel: "8009938000",
+    email: "way2shounak@gmail.com",
+    tel: "9674617402",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/abhi-yo",
+        url: "https://github.com/shounakdev",
         icon: Icons.github,
         navbar: true
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/singh-akshat/",
+        url: "https://www.linkedin.com/in/shounakchandra/",
         icon: Icons.linkedin,
         navbar: true
       },
       X: {
         name: "X",
-        url: "https://x.com/akshatbuilds",
+        url: "https://x.com/_shounakchandra",
         icon: Icons.x,
         navbar: true
       },
     }
   },
   education: [
-    {
-      school: "Delhi Public School",
-      href: "https://dpsjankipuram.com/Site/Home/240000001_240000001_Home",
-      degree: "High School",
-      logoUrl: "/dps.jpg",
-      start: "2020",
-      end: "2021",
-    },
+    
     {
       school: "SRM Institute of Science and Technology",
       href: "https://www.srmist.edu.in/",
@@ -72,89 +61,81 @@ export const DATA = {
   ],
   work: [
     {
-      company: "Freelance",
-      title: "Full-Stack Developer",
-      location: "Remote",
-      type: "Freelance",
-      start: "January 2024",
+      company: "Ericsson",
+      title: "Software Enginner",
+      location: "Remote, Global",
+      type: "Full Time",
+      start: "January 2025",
       end: "Present",
-      href: "",
-      logoUrl: "/freelance.png",
-      description: "Developing custom web applications and solutions for various clients. Building scalable full-stack applications using modern technologies like Next.js, React, Node.js, and cloud platforms. Collaborating directly with clients to understand requirements and deliver tailored solutions.",
+      href: "https://www.ericsson.com/en",
+      logoUrl: "/Ericsson_log.png",
+      description: "Currently paving the way for the next generation of wireless networks at Ericsson Research Labs  in collaboration with major telecom operators, including AT&T, Vodafone and China Mobile.",
       badges: []
     }
   ],
   projects: [
     {
-      title: "Devconnect",
-      href: "https://github.com/abhi-yo/hyperlocal",
-      dates: "April, 2025",
+      title: "JamJiggle",
+      href: "https://github.com/shounakdev/meetup",
+      dates: "August, 2025",
       active: true,
       description:
-        "A modern social platform for developers to connect, share ideas, and collaborate on projects. Features include GitHub OAuth integration, trending repositories section, and Dev.to/Reddit content integration.",
+        "A fun video conference app where 2 people can connect, chat, share movies and have a great time.",
       technologies: [
         "Next.js",
         "React",
-        "TailwindCSS",
-        "tRPC",
-        "Prisma",
-        "PostgreSQL",
-        "Redis",
-        "NextAuth.js",
+        "WebRTC",
+        "Socket.io",
         "TypeScript"
       ],
       links: [
           {
             type: "Website",
-            href: "https://devconnect-social.vercel.app",
+            href: "https://jamjiggle.netlify.app/",
             icon: <Icons.globe className="size-3" />,
           },
       ],
-      image: "",
-      video: "/videos/devconnect.mp4",
+      image: "/JamJiggle.png",
+      video: "",
     },
     {
-      title: "Event Sphere",
-      href: "https://github.com/abhi-yo/hyperlocal",
-      dates: "October, 2024",
+      title: "GitDock",
+      href: "https://github.com/shounakdev/gitdock-web",
+      dates: "June, 2025",
       active: true,
       description:
-        "Event platform where users can create, discover, and join local events in real-time. Developed event-specific chat channels enabling dedicated real-time communication for each event.",
+        "Your own cloud based RBAC first version control system. Control your code, collaborate with others, and manage your projects seamlessly.",
       technologies: [
         "Next.js",
         "TypeScript",
         "Node.js",
-        "Socket.io",
-        "Redis",
-        "MongoDB",
-        "Google Maps API",
-        "Vultr Cloud"
+        "Firebase",
+        "Supabase",
+        
       ],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/abhi-yo/hyperlocal",
-          icon: <Icons.github className="size-3" />,
+          type: "Website",
+          href: "https://gitdock.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
-      video: "/videos/eventsphere.mp4",
+      video: "/videos/Gitdock Intro.mp4",
     },
     {
-      title: "Smart Shelf",
-      href: "https://github.com/abhi-yo/smart-shelf",
-      dates: "August 16th - 17th, 2024",
+      title: "Torrentino",
+      href: "https://github.com/shounakdev/torentino",
+      dates: "August, 2025",
       active: true,
       description:
-        "Automates inventory tracking by reading RFID tags and storing data in a database. Streamlines stock monitoring and reduces manual checks by automatically recording RFID tag data in real-time.",
+        "An open source torrent client inspired by qbit torrent. Sevrer side build as a codecrafters advamced challenge. Clientside revamped with modern UI.",
       technologies: [
         "Node.js",
         "Express",
-        "SerialPort",
-        "MongoDB",
-        "Arduino",
-        "JavaScript",
-        "HTML/CSS"
+        "NativeFetch",
+        "CookieHandler",
+      
       ],
       links: [
         {
@@ -163,16 +144,16 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image: "",
-      video: "/videos/smartshelf.mp4 ",
+      image: "/Torrentino.png",
+      //video: "/videos/smartshelf.mp4 ",
     },
     {
-      title: "Ecommerce",
-      href: "https://github.com/abhi-yo/ecommerce-frontend",
-      dates: "Feb 2024 - May 2024",
+      title: "Bongiler",
+      href: "https://github.com/shounakdev/Bongiler",
+      dates: "September 2024",
       active: true,
       description:
-        "A full-stack ecommerce platform with user authentication, product catalog, shopping cart, and admin dashboard.",
+        "A rust based bengali compiler for beginers. Bongiler was previously used by a NGO to encourage first gen learners to learn programming in their native language.",
       technologies: [
         "TypeScript",
         "Express",
@@ -184,334 +165,93 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://ecommerce-frontend-iota-three.vercel.app/",
+          href: "https://bongiler.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/abhi-yo/ecommerce-frontend",
-          icon: <Icons.github className="size-3" />,
-        }
+        
       ],
       image: "",
-      video: "https://i.imgur.com/xN9C6gb.mp4",
+      video: "/videos/bongiler demo video.mp4",
     },
   ],
   Milestones: [
     {
-      title: "Closed Companies",
-      dates: "July, 2025",
+      title: "JamJiggle",
+      dates: "August, 2025",
       description:
-        "A public archive documenting startup failures from 2016-2025.",
+        "A fun video conference app where 2 people can connect, chat, share movies and have a great time.",
       location:"",
       image:
-        "./closedcompanies.png",
+        "./JamJiggle.jpg",
       links: [
         {
           title: "Live Demo",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://closed-companies.vercel.app/",
+          href: "https://jamjiggle.netlify.app/",
         }
       ],
     },
     {
-      title: "Resume Generator",
-      dates: "July, 2025",
+      title: "Gitdock",
+      dates: "April, 2025",
       description:
-        "Professional resume generator that turns your GitHub into a polished LaTeX resume, top 6 on Peerlist with 130+ upvotes and 200+ visitors on website.",
+        "Your own cloud based RBAC first version control system. Control your code, collaborate with others, and manage your projects seamlessly.",
       location:"",
       image:
-        "./githubresume.png",
+        "./gitdock.png",
       links: [
         {
           title: "Live Demo",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://githubresume.vercel.app/resume",
+          href: "https://gitdock.vercel.app/",
         }
       ],
     },
     {
-      title: "Quilly",
-      dates: "July, 2025",
+      title: "Integration Engineer Intern",
+      dates: "Jaunuary, 2025",
       description:
-        "A distraction-free writing platform with blockchain-powered copyright protection, built with Next.js and deployed on Polygon.",
+        "I join Ericsson as an Intern. On my way to climb the corporate ladder.",
       location:"",
       image:
-        "./quily.png",
+        "./Ericsson_log.png",
+    
+    },
+    {
+      title: "Bongiler",
+      dates: "Decmeber, 2024",
+      description:
+        "Bongiler gains tracktion and is used by a NGO to encourage first gen learners to learn programming in their native language.",
+      location:"",
+      image:
+        "./Bongiler.png",
       links: [
         {
-          title: "Live Demo",
+          title: "Website",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://contentplatform.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/quilly",
+          href: "https://bongiler.netlify.app/",
         }
       ],
     },
     {
-      title: "Pricepal",
-      dates: "June, 2025",
+      title: "Bongiler",
+      dates: "September, 2024",
       description:
-        "A web app that serves as a price comparison platform, to help users find the best deals across multiple e-commerce platforms in India.",
+        "Start working on Bongiler a rust based bengali programming language compiler for beginners.",
       location:"",
       image:
-        "./pricepal.png",
+        "./Bongiler.png",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/pricepal",
+          href: "https://github.com/shounakdev/Bong-Compiler",
         }
       ],
     },
-    {
-      title: "SkillPact",
-      dates: "June, 2025",
-      description:
-        "Skillpact is a unique credit-based skill exchange platform designed to connect neighbors and foster community collaboration.",
-      location:"",
-      image:
-        "./skillpact.png",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://www.skillpact.co/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/skillpact",
-        }
-      ],
-    },
-    {
-      title: "Website Modifier",
-      dates: "May 7th, 2025",
-      description:
-        "A powerful browser extension that allows you to modify any website using natural language instructions. Simply describe what you want to change, and the extension will generate and apply the necessary code.",
-      location:"",
-      image:
-        "https://cdn-icons-png.flaticon.com/512/1875/1875660.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/website-modifier",
-        }
-      ],
-    },
-    {
-      title: "Swap Contract",
-      dates: "May 6th, 2025",
-      description:
-        "Web application built with Express that provides a simple interface to perform a token swap on the Solana blockchain using the Jupiter Aggregator API.",
-      location:"",
-      image:
-        "./swapcontract.jpg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/swapcontract",
-        }
-      ],
-    },
-    {
-      title: "Etherea",
-      dates: "April 25th, 2025",
-      description:
-        "A static landing page built with Next.js for a concept app that offers AI-generated ambient soundscapes. Focuses on clean design, atmospheric visuals, and a waitlist email form.",
-      location:"",
-      image:
-        "https://cdn-icons-png.flaticon.com/512/9650/9650488.png",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://etherea-three.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/etherea",
-        }
-      ],
-    },
-    {
-      title: "Solana Wallet Interface",
-      dates: "April 18th, 2025",
-      description:
-        "A minimal web interface for interacting with Solana blockchain, built with React and Solana Web3.js.",
-      location:"",
-      image:
-        "./solanawalletinterface.jpg",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://solana-wallet-interface.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/solana-wallet-interface",
-        }
-      ],
-    },
-    {
-      title: "CodeNexus",
-      dates: "April 18th, 2025",
-      description:
-        "A project built leveraging the groq ai api for enhancing code.",
-      location:"",
-      image:
-        "https://cdn-icons-png.flaticon.com/512/6295/6295417.png",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://codenexus-ruby.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/codenexus",
-        }
-      ],
-    },
-    {
-      title: "Subscription Tracker",
-      dates: "April 16th, 2025",
-      description:
-        "This app helps you track subscriptions and bank transactions by analyzing your email data. Since it uses a mail scanner, you'll need to clone the repo and run it locally.",
-      location:"",
-      image:
-        "https://cdn-icons-png.flaticon.com/512/7142/7142010.png",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://subscriptionsummary.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/subscription-tracker",
-        }
-      ],
-    },
-    {
-      title: "Web Wallet",
-      dates: "April 1st, 2025",
-      description:
-        "Allows you to generate and manage Ethereum wallets securely in your browser.",
-      location:"",
-      image:
-        "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
-      links: [
-        {
-          title: "Live Demo",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://web-wallet-eth.vercel.app/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/web-wallet",
-        }
-      ],
-    },
-    {
-      title: "Message",
-      dates: "March 29th, 2025",
-      description:
-        "Real-time chat application built with Next.js 15, Socket.io, PostgreSQL, Prisma ORM, Tailwind CSS having a beautiful UI.",
-      location:"",
-      image:
-        "https://cdn-icons-png.flaticon.com/512/2076/2076218.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/Message",
-        }
-      ],
-    },
-    {
-      title: "Casino Games",
-      dates: "February 14th, 2025",
-      description:
-        "A browser-based casino application featuring Slots and Roulette games, built with TypeScript.",
-      location:"",
-      image:
-        "./casinogame.jpg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/casino-games",
-        }
-      ],
-    },
-    {
-      title: "API Rate Limiter",
-      dates: "January 6th - 11th, 2025",
-      description:
-        "Test rate limiting on any API endpoint",
-      location:"",
-      image:
-        "./apiratelimiter.jpg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/rate-limiter",
-        }
-      ],
-    },
-    {
-      title: "WebRTC Video Streaming Application",
-      dates: "December 12th - 13th, 2024",  // Using current date since no specific date was provided
-      description:
-        "Developed a real-time peer-to-peer video streaming application using WebRTC and WebSocket. Features include live video broadcasting from a sender to receiver with efficient signaling server implementation.",
-        location:"",
-      image:
-        "./webrtc.jpeg",  // Keeping the same image path
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/abhi-yo/simple-webrtc-stream",
-        },
-      ],  // Keeping empty links array
-      // Removed MLH badge since it's not relevant to this project
-},
-{
-  title: "GitHub Profile Roaster",
-  dates: "2024",
-  description: "A fun web application built with React and Next.js that roasts GitHub profiles in a humorous way. Users can input GitHub usernames to receive entertaining and playful critiques of their profiles.",
-  location:"",
-  image: "./githubroast.png",  // You'll need to update with actual image URL
-  links: [
-    {
-      title: "Live Demo",
-      icon: <Icons.globe className="h-4 w-4" />,
-      href: "https://roasting-github.vercel.app",
-    },
-    {
-      title: "Source",
-      icon: <Icons.github className="h-4 w-4" />,
-      href: "https://github.com/YourUsername/github-profile-roaster",  // You'll need to update with actual GitHub repo
-    }
-  ]
-},
     {
       title: "Sparkathon",
-      dates: "August 16th, 2024",
+      dates: "August, 2024",
       description: "Developed an IoT-based inventory management system using RFID technology for real-time stock monitoring. Features include automated restocking alerts, secure admin dashboard, and seamless integration with RFID sensors for accurate inventory tracking.",
       location:"",
       image:
@@ -524,5 +264,103 @@ export const DATA = {
         },
       ],
     },
+    {
+      title: "Stick and Dot",
+      dates: "January, 2024",
+      description:
+        "Helped them build a 3D AR application using Unity 3D based on the Unity 3D AR Foundation Framework.",
+      location:"",
+      image:
+        "./stickdot.jpg",
+    },
+    {
+      title: "Cubane",
+      dates: "June, 2023",
+      description:
+        "Started working with Cubane as a blockchain devloper intern.",
+      location:"",
+      image:
+        "/cubane_logo.jpeg",
+      
+    },
+    {
+      title: "IoT Expo",
+      dates: "March, 2023",
+      description:
+        "Placed 3rd at IoT Expo 2023 for providing the best waste management solution for the SRM Kattankulathur Campus.",
+      location:"",
+      image:
+        "./srmlogo.png",
+        links: [
+        {
+          title: "Certificate",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://shounak2003-my.sharepoint.com/personal/shounak_chandra_shounak2003_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fshounak%5Fchandra%5Fshounak2003%5Fonmicrosoft%5Fcom%2FDocuments%2FShounak%2FPers%2FCertificate%20nd%20Ids%2FSRM%2FIoT%20Expo%2FIoT%20Expo%2Epdf&parent=%2Fpersonal%2Fshounak%5Fchandra%5Fshounak2003%5Fonmicrosoft%5Fcom%2FDocuments%2FShounak%2FPers%2FCertificate%20nd%20Ids%2FSRM%2FIoT%20Expo&ga=1",
+        },
+      ],
+    },
+    {
+      title: "Speaker at first Offline Seminar",
+      dates: "August, 2022",
+      description:
+        "Volunteering experience at Think Digital where I taught Unity 3d, basics of game physics and built a simple tetris 3d game with 50+ students.",
+      location:"",
+      image:
+        "./td.png",
+      
+    },
+    {
+      title: "Hosting my first Offline Event",
+      dates: "February, 2022",
+      description:
+        "Hosted my first offline event at RMC where students from more than 250+ collegees registered and perticipated in the event.",
+      location:"",
+      image:
+        "./rmc.jpeg",
+     
+    },
+    {
+      title: "Technical Researcher",
+      dates: "January, 2022",
+      description:
+        "Worked as a technical researcher at Christ Univerity, Bangalore. I built a Virtual Reality platform for cogitive research.",
+      location:"",
+      image:
+        "./emblem_logo.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/shounakdev/Neuroscience-and-Instrumentation.git",
+        }
+      ],
+    },
+    {
+      title: "Hosted first Online Event",
+      dates: "August, 2021",
+      description:
+        "Hosted first online event at RMC where participants from more than 150+ colleges in India participated in more than 50+ events throughout the event.",
+      location:"",
+      image:
+        "./rmc.jpeg",
+    },
+    {
+      title: "Undergraduate Techinical Researcher",
+      dates: "April 1st, 2025",
+      description:
+        "Helped make Virtual Maze Environments using Vizard.AI. Worked on connecting and getting data streams through biopac.",
+      location:"",
+      image:
+        "./roorkee.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/shounakdev/Route-Learning-and-Spatial-Navigation.git",
+        }
+      ],
+    },
+    
+    
   ],
 } as const;
